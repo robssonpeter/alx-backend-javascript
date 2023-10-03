@@ -5,9 +5,13 @@ function getListStudentIds(lst){
     if(typeof(lst) === 'string'){
         return [];
     }
-    return lst.map((stu) => {
-        return stu.id;
-    })
+    const mapped = lst.map((stu) => {
+        if(stu.id){
+            return stu.id;
+        }
+    });
+
+    return mapped.filter((el) => el !== undefined)
 }
 
 module.exports = getListStudentIds

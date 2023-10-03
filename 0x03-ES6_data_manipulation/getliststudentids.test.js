@@ -10,3 +10,10 @@ test('passing a simple object', () => {
     ];
     expect(getListStudentIds(test_list)).toStrictEqual([15])
 });
+
+test('Passing an array of empty object', () => {
+    const arr = [
+        {}
+    ];
+    expect(getListStudentIds(arr)).toStrictEqual([]);
+})
