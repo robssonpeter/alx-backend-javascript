@@ -3,6 +3,7 @@ process.stdin.setEncoding('utf8');
 console.log(question);
 process.stdin.on('data', (name) => {
     console.log(`Your name is: ${name}`);
+    console.log(process);
     process.exit();
 })
 
