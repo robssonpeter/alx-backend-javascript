@@ -1,0 +1,16 @@
+{
+  "name": "unittest_js",
+  "version": "1.0.0",
+  "description": "0x06. Unittests in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "author": "Peter Mgembe",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "sinon": "^17.0.1"
+  }
+}
