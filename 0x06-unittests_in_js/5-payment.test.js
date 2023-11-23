@@ -3,7 +3,7 @@ const sendPaymentRequestToApi = require('./5-payment.js');
 const Utils = require('./utils.js');
 
 
-describe('Testing for the sendPayment Stubbed', () => {
+describe('Testing for the sendPayment', () => {
     let spy;
     let total;
     before(() => {
