@@ -6,7 +6,7 @@ const Utils = require('./utils.js');
 describe('Testing for the sendPayment', () => {
     let spy;
     let total;
-    before(() => {
+    beforeEach(() => {
         spy = sinon.spy(console, 'log');
     });
     it(`#should log the correct total 120`,() => {
@@ -23,7 +23,7 @@ describe('Testing for the sendPayment', () => {
         spy.calledOnceWith(`The total is: ${total}`);
     })
 
-    after(() => {
+    afterEach(() => {
         sinon.restore();
     })
 });
