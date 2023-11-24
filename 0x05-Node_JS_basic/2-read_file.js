@@ -28,8 +28,8 @@ function countStudents(path){
         })
         
     }catch(exception){
-        console.log(exception)
-        //throw new Error('Cannot load the database');
+        //console.log(exception)
+        throw new Error('Cannot load the database');
     }
 }
 
