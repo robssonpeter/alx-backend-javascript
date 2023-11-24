@@ -2,8 +2,7 @@ const question = 'Welcome to Holberton School, what is your name?';
 process.stdin.setEncoding('utf8');
 console.log(question);
 process.stdin.on('data', (name) => {
-  // name = name.trim();
-  console.log(`Your name is: ${name}`);
+  console.log(`Your name is: ${name.trim()}`);
   process.exit();
 });
 
