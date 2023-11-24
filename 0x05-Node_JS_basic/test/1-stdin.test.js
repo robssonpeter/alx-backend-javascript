@@ -3,7 +3,7 @@ const script_path = '../1-stdin.js';
 
 describe('testing the execution', () => {
   it('if available', () => {
-    /* const scripted = exec(`node ${script_path}`, (error, stdout, stderr) => {
+    const scripted = exec(`node ${script_path}`, (error, stdout, stderr) => {
       if(error){
         done(error);
       }
@@ -12,9 +12,9 @@ describe('testing the execution', () => {
 
       })
     });
-    console.log(scripted.on('close', () => {
+    scripted.on('close', () => {
       console.log('exiting')
-    })) */
+    })
   })
   
 })

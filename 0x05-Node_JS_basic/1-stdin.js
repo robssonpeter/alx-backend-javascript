@@ -4,7 +4,6 @@ console.log(question);
 process.stdin.on('data', (name) => {
     name = name.trim()
     console.log(`Your name is: ${name}`);
-    console.log(process);
     process.exit();
 })
 
